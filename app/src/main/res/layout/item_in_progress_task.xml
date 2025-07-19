@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:padding="14dp"
+    android:backgroundTint="#F9F9F9"
+    android:radius="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/taskTitle"
+            android:text="Task Title"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/taskType"
+            android:text="Type: Design"
+            android:layout_marginTop="6dp"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/taskProgress"
+            android:text="Progress: 70%"
+            android:layout_marginTop="4dp"
+            android:textColor="#00796B"
+            android:textStyle="italic"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
