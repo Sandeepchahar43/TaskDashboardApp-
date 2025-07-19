@@ -14,8 +14,9 @@ class InProgressTaskAdapter(private val tasks: List<InProgressTask>) :
 
         fun bind(task: InProgressTask) {
             binding.taskTitle.text = task.title
-            binding.taskType.text = "Type: ${task.type}"
-            binding.taskProgress.text = "Progress: ${task.progress}%"
+            binding.taskProgressText.text = "${task.progress}%"
+            binding.circularProgress.setProgressCompat(task.progress, true)
+
         }
     }
 
